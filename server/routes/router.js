@@ -32,8 +32,8 @@ router.post('/api/v1/task', (req, res, next) => {
   var insertString = 'call ' + mysql_db + '.task_insert(\'' +
     req.body.title        + '\', \'' + 
     req.body.description  + '\', \'' + 
-    req.body.assigned     + '\', \'' + 
-    req.body.categoryID   + '\');';
+    req.body.assigned     + '\', ' + 
+    req.body.categoryID   + ');';
   console.log('in put simulator insert_string is ', insertString);
   con.query(insertString, function (err, rows) {
     if(err){
