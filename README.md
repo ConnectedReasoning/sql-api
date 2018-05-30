@@ -10,7 +10,7 @@ https://sql-api-cr.herokuapp.com/api/v1
 
 # POST
   ## request
-    curl -d '{"title": "your title", "description": "your description", "assigned": "assignee name", "categoryID": 1}  -H "Content-Type: application/json" -X POST https://sql-api-cr.herokuapp.com/api/v1/task
+    curl -d '{"title": "your title", "description": "your description", "assigned": "assignee name", "categoryID": 1}'  -H "Content-Type: application/json" -X POST https://sql-api-cr.herokuapp.com/api/v1/task
    
    ## response
       [
