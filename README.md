@@ -1,28 +1,70 @@
-# sql-api
+# SQL-API
 SImple mySQL api using node
 
-# Base URL
+---
+### base URL
 https://sql-api-cr.herokuapp.com/api/v1
+---
+#   CATEGORY
+###    GET
+  `curl https://sql-api-cr.herokuapp.com/api/v1/category `
 
-# TASK
-# GET
-   curl https://sql-api-cr.herokuapp.com/api/v1/task
-
-# POST
-  ## request
-    curl -d '{"title": "your title", "description": "your description", "assigned": "assignee name", "categoryID": 1}'  -H "Content-Type: application/json" -X POST https://sql-api-cr.herokuapp.com/api/v1/task
+---
+### POST
+  #### *request*
+     curl -d '{"title": "your title", "description": "your description" }'  -H "Content-Type: application/json" -X POST https://sql-api-cr.herokuapp.com/api/v1/category `
    
-   ## response
-      [
-          {
-              "id": 5,
-              "title": "second task",
-              "description": "this is the second task.",
-              "assigned": "myself",
-              "categoryID": 1
-          }
-      ]
+   #### *response*
+    [{
+        "status": "insert successful"
+    }]
     
-# PUT
+### PUT
+  #### *request*
+     curl -d '{"id":1, "title": "updated title", "description": "updated description"}'  -H "Content-Type: application/json" -X PUT https://sql-api-cr.herokuapp.com/api/v1/category `
+   
+   #### *response*
+    [{
+        "status": "update successful"
+    }]
+    
+### DELETE
+  #### *request*`
+  `curl https://sql-api-cr.herokuapp.com/api/v1/category/2`
 
-# DELETE
+    #### *response*
+    [{
+    "status": "delete successful"
+    }]
+---
+#   TASK
+###    GET
+  `curl https://sql-api-cr.herokuapp.com/api/v1/task `
+
+---
+### POST
+  #### *request*
+     curl -d '{"title": "your title", "description": "your description", "assigned": "assignee name", "categoryID": 1}'  -H "Content-Type: application/json" -X POST https://sql-api-cr.herokuapp.com/api/v1/task `
+   
+   #### *response*
+    [{
+        "status": "insert successful"
+    }]
+    
+### PUT
+  #### *request*
+     curl -d '{"id":1, "title": "updated title", "description": "updated description"}'  -H "Content-Type: application/json" -X PUT https://sql-api-cr.herokuapp.com/api/v1/task `
+   
+   #### *response*
+    [{
+        "status": "update successful"
+    }]
+    
+### DELETE
+  #### *request*`
+  `curl https://sql-api-cr.herokuapp.com/api/v1/task/2`
+
+    #### *response*
+    [{
+    "status": "delete successful"
+    }]
