@@ -1,26 +1,39 @@
 # SQL-API
 SImple mySQL api using node
 
+
 ---
-### base URL
-https://sql-api-cr.herokuapp.com/api/v1
----
-#   CATEGORY
+###   https://sql-api-cr.herokuapp.com/api/v1/category
 ###    GET
+#### *request*
   `curl https://sql-api-cr.herokuapp.com/api/v1/category `
 
+  #### *response*
+    [
+      {
+        "id": 1,
+        "title": "main",
+        "description": "main description"
+      },
+      {
+          "id": 3,
+          "title": "third category",
+          "description": "this is third catalog"
+      }
+    ] `
 ---
 ### POST
   #### *request*
      curl -d '{"title": "your title", "description": "your description" }'  -H "Content-Type: application/json" -X POST https://sql-api-cr.herokuapp.com/api/v1/category `
    
-   #### *response*
+#### *request*
     [{
         "status": "insert successful"
     }]
     
 ### PUT
   #### *request*
+
      curl -d '{"id":1, "title": "updated title", "description": "updated description"}'  -H "Content-Type: application/json" -X PUT https://sql-api-cr.herokuapp.com/api/v1/category `
    
    #### *response*
@@ -28,6 +41,7 @@ https://sql-api-cr.herokuapp.com/api/v1
         "status": "update successful"
     }]
     
+
 ### DELETE
   #### *request*`
   `curl https://sql-api-cr.herokuapp.com/api/v1/category/2`
@@ -36,8 +50,9 @@ https://sql-api-cr.herokuapp.com/api/v1
     [{
     "status": "delete successful"
     }]
+    
 ---
-#   TASK
+#   https://sql-api-cr.herokuapp.com/api/v1/task
 ###    GET
   `curl https://sql-api-cr.herokuapp.com/api/v1/task `
 
