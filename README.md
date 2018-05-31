@@ -36,7 +36,7 @@ SImple mySQL api using node
 
      curl -d '{"id":1, "title": "updated title", "description": "updated description"}'  -H "Content-Type: application/json" -X PUT https://sql-api-cr.herokuapp.com/api/v1/category `
    
-   #### *response*
+  #### *response*
     [{
         "status": "update successful"
     }]
@@ -48,14 +48,30 @@ SImple mySQL api using node
 
     #### *response*
     [{
-    "status": "delete successful"
+      "status": "delete successful"
     }]
 
 ---
 ##    https://sql-api-cr.herokuapp.com/api/v1/task
 ###    GET
-  `curl https://sql-api-cr.herokuapp.com/api/v1/task `
-
+  #### *request*
+    `curl https://sql-api-cr.herokuapp.com/api/v1/task `
+  #### *response*
+  
+   `[{
+        "id": 5,
+        "title": "second task",
+        "description": "this is the second task.",
+        "assigned": "myself",
+        "categoryID": 1
+    },
+    {
+        "id": 7,
+        "title": "your title",
+        "description": "your description",
+        "assigned": "assignee name",
+        "categoryID": 1
+    }]`
 ---
 ### POST
   #### *request*
