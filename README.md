@@ -3,7 +3,7 @@ SImple mySQL api using node
 
 
 ---
-###   https://sql-api-cr.herokuapp.com/api/v1/category
+##   https://sql-api-cr.herokuapp.com/api/v1/category
 ###    GET
 #### *request*
   `curl https://sql-api-cr.herokuapp.com/api/v1/category `
@@ -50,9 +50,9 @@ SImple mySQL api using node
     [{
     "status": "delete successful"
     }]
-    
+
 ---
-#   https://sql-api-cr.herokuapp.com/api/v1/task
+##    https://sql-api-cr.herokuapp.com/api/v1/task
 ###    GET
   `curl https://sql-api-cr.herokuapp.com/api/v1/task `
 
