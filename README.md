@@ -57,21 +57,25 @@ SImple mySQL api using node
   #### *request*
     `curl https://sql-api-cr.herokuapp.com/api/v1/task `
   #### *response*
-  
-   `[{
-        "id": 5,
-        "title": "second task",
-        "description": "this is the second task.",
-        "assigned": "myself",
-        "categoryID": 1
-    },
-    {
-        "id": 7,
-        "title": "your title",
-        "description": "your description",
-        "assigned": "assignee name",
-        "categoryID": 1
-    }]`
+
+    `[
+        {
+            "id": 5,
+            "title": "second task",
+            "description": "this is the second task.",
+            "assigned": "myself",
+            "categoryID": 1
+        },
+        {
+            "id": 7,
+            "title": "your title",
+            "description": "your description",
+            "assigned": "assignee name",
+            "categoryID": 1
+        }
+      ]
+    `
+
 ---
 ### POST
   #### *request*
