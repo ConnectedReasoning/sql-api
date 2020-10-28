@@ -19,23 +19,23 @@
     "url": "git+https://github.com/connectedReasoning/mongo-api.git"
   },
   "dependencies": {
-    "body-parser": "^1.18.0",
-    "cookie-parser": "^1.4.3",
-    "cors": "^2.8.4",
-    "debug": "^3.0.1",
-    "express": "^4.16.1",
-    "lodash": "^4.17.4",
-    "moment": "^2.18.1",
-    "mongodb": "^2.2.30",
-    "morgan": "~1.7.0",
-    "mysql": "^2.13.0",
-    "mysql2": "^1.2.0",
-    "serve-favicon": "~2.3.0"
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "nodemon": "^1.17.5",
-    "request": "^2.60.0"
+    "chai": "^4.2.0",
+    "nodemon": "^2.0.6",
+    "request": "^2.88.2"
   },
   "license": "UNLICENSED",
   "bugs": {
